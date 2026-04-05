@@ -1,0 +1,57 @@
+# AWS IAM Least Privilege
+
+## What I did:
+
+- Created IAM user with over-permission (AdministratorAccess)
+- Tested full access across AWS services
+- Identified security risk of excessive permissions
+- Removed AdministratorAccess policy
+- Created custom least privilege policy
+- Attached restricted policy to user
+- Tested allowed and denied actions
+
+
+
+## Key Learnings:
+
+- Least privilege means giving only required permissions
+- Over-permission is a major security risk
+- AdministratorAccess should not be used unnecessarily
+- Custom policies help enforce security boundaries
+- Explicit deny overrides allow
+- AWS follows default deny model
+
+
+
+## Hands-on Summary:
+
+- Initially attached `AdministratorAccess`
+- Verified:
+  - Full access to AWS services ❌ (security risk)
+- Replaced with custom S3 read-only policy
+- Verified:
+  - Can view S3 buckets ✅
+  - Cannot upload/delete objects ❌
+- Successfully enforced least privilege
+- Make new policies where uploading file and viewing file is permitted but now deleting or modifying it works
+
+
+
+## Mistakes to Avoid:
+
+- Granting full admin access to users
+- Not reviewing permissions after attaching policies
+- Ignoring least privilege principle
+- Using wildcard (*) permissions carelessly
+
+
+
+## Security Insight:
+
+- Over-permission can lead to:
+  - Data breaches
+  - Resource deletion
+  - Privilege escalation attacks
+- Always restrict access based on actual need
+
+
