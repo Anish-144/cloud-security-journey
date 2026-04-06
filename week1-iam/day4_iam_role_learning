@@ -1,0 +1,68 @@
+# AWS IAM Roles
+
+## What I did:
+
+- Created IAM user and generated access keys
+- Configured AWS CLI inside EC2 using IAM user keys
+- Tested S3 access using stored credentials
+- Observed credentials stored in `~/.aws/credentials`
+- Understood security risks of long-term credentials
+- Created IAM role for EC2 with S3 permissions
+- Attached IAM role to EC2 instance
+- Removed stored IAM user credentials from EC2
+- Tested S3 access again using IAM role
+
+
+
+## Key Learnings:
+
+- IAM users use long-term credentials (access key & secret key)
+- Storing credentials inside EC2 is insecure
+- IAM roles provide temporary credentials
+- Roles eliminate need for hardcoded secrets
+- AWS recommends roles over access keys for EC2
+- Temporary credentials automatically expire
+- IAM roles follow best security practices
+
+
+
+## Hands-on Summary:
+
+- Used IAM user keys inside EC2:
+  - Stored in `~/.aws/credentials` ❌
+  - Permanent credentials ❌
+- Replaced with IAM role:
+  - No credentials stored ✅
+  - Temporary access via AWS ✅
+- Verified access using:
+  - `aws s3 ls`
+
+
+
+## Mistakes to Avoid:
+
+- Storing access keys inside EC2 instances
+- Using long-term credentials for applications
+- Ignoring IAM roles for AWS services
+- Giving excessive permissions to roles
+
+
+
+## Security Insight:
+
+- If IAM user keys are exposed:
+  - Attacker gets long-term access
+- IAM roles reduce risk by:
+  - Providing temporary credentials
+  - Limiting access scope
+- AWS strongly recommends using roles for compute services
+
+
+
+## Real-World Understanding:
+
+- EC2 = compute (processing)
+- S3 = storage (data)
+- IAM role allows EC2 to securely interact with S3
+- This pattern is used in real-world cloud architectures
+
