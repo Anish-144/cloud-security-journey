@@ -1,0 +1,63 @@
+# AWS IAM MFA (Multi-Factor Authentication)
+
+## What I did:
+
+- Navigated to IAM service in AWS console
+- Selected IAM user and opened security credentials
+- Enabled Multi-Factor Authentication (MFA)
+- Configured virtual MFA using authenticator app
+- Scanned QR code and verified OTP codes
+- Successfully activated MFA for IAM user
+- Tested login with password + OTP
+- Tested differnt MFA option such as security passkey, authenticator app .
+
+
+
+## Key Learnings:
+
+- MFA adds an extra layer of security beyond passwords
+- Authentication requires something you know (password) + something you have (OTP)
+- Even if credentials are compromised, MFA prevents unauthorized access
+- AWS supports virtual, hardware, and SMS-based MFA
+- Virtual MFA (Authenticator apps) is most commonly used
+
+
+
+## Hands-on Summary:
+
+- Enabled MFA using Google/Microsoft Authenticator
+- Verified setup using two consecutive OTP codes
+- Logged out and tested login flow:
+  - Password required ✅
+  - OTP required ✅
+- Confirmed MFA is working correctly
+
+
+
+## Mistakes to Avoid:
+
+- Not enabling MFA on root account
+- Relying only on passwords for security
+- Losing access to MFA device without backup
+- Sharing OTP codes with others
+
+
+
+## Security Insight:
+
+- MFA protects against:
+  - Password leaks
+  - Phishing attacks
+  - Credential stuffing
+- Even if attacker gets password, access is blocked without OTP
+- Critical for securing high-privilege accounts
+
+
+
+## Real-World Understanding:
+
+- MFA is mandatory in production environments
+- Used in combination with IAM roles and least privilege
+- Essential control in compliance frameworks (SOC2, ISO 27001)
+
+
