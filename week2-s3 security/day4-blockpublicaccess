@@ -1,0 +1,39 @@
+# AWS S3 Secure Configuration
+
+## What I did:
+
+- Enabled Block Public Access settings
+- Removed public bucket policy
+- Restricted access to authorized users only
+
+---
+
+## Key Learnings:
+
+- Block Public Access overrides bucket policies
+- Removing public policies prevents unauthorized access
+- Security should be enforced at multiple levels
+
+---
+
+## Hands-on Summary:
+
+- Enabled Block Public Access
+- Deleted public access policy
+- Tested access restriction
+
+---
+
+## Mistakes to Avoid:
+
+- Forgetting to re-enable security settings
+- Leaving unused policies active
+- Not testing after applying fixes
+
+---
+
+## Security Insight:
+
+- Defense-in-depth approach improves security
+- Blocking public access is a critical control
+
