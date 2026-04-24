@@ -1,0 +1,43 @@
+# AWS S3 Bucket Setup
+
+## What I did:
+
+- Created an S3 bucket in AWS
+- Configured region and unique bucket name
+- Kept Block Public Access enabled (default secure setting)
+- Uploaded test files (text/image)
+
+---
+
+## Key Learnings:
+
+- S3 bucket is a container for storing objects
+- Buckets are private by default
+- Each bucket name must be globally unique
+- Data in S3 is highly durable and scalable
+
+---
+
+## Hands-on Summary:
+
+- Created bucket: `anish-lab-bucket`
+- Uploaded sample files
+- Verified access via AWS console
+
+---
+
+## Mistakes to Avoid:
+
+- Using non-unique bucket names
+- Disabling security settings without understanding
+- Uploading sensitive data without encryption
+
+---
+
+## Security Insight:
+
+- Default private configuration prevents unauthorized access
+- S3 is secure only if configured correctly
+
+---
+
