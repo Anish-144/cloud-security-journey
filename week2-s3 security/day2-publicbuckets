@@ -1,0 +1,41 @@
+# AWS S3 Public Access Vulnerability
+
+## What I did:
+
+- Disabled Block Public Access settings
+- Added bucket policy to allow public read access
+- Made S3 objects publicly accessible
+
+---
+
+## Key Learnings:
+
+- Public buckets allow anyone on the internet to access data
+- Bucket policies control access permissions
+- Misconfiguration can lead to data exposure
+
+---
+
+## Hands-on Summary:
+
+- Disabled Block Public Access
+- Applied public read policy
+- Accessed object using public URL without authentication
+
+---
+
+## Mistakes to Avoid:
+
+- Leaving public access enabled in production
+- Granting access to "*" (everyone) without control
+- Not reviewing bucket policies
+
+---
+
+## Security Insight:
+
+- Public S3 buckets are a common cause of data breaches
+- Sensitive data can be exposed unintentionally
+
+---
+
