@@ -1,0 +1,39 @@
+# AWS S3 Data Encryption
+
+## What I did:
+
+- Enabled default encryption for S3 bucket
+- Configured server-side encryption (SSE-S3)
+- Verified encryption settings
+
+---
+
+## Key Learnings:
+
+- Encryption protects data at rest
+- AWS provides built-in encryption mechanisms
+- Encryption is essential for compliance and security
+
+---
+
+## Hands-on Summary:
+
+- Enabled SSE-S3 encryption
+- Ensured all new objects are encrypted automatically
+
+---
+
+## Mistakes to Avoid:
+
+- Storing sensitive data without encryption
+- Ignoring compliance requirements
+- Not verifying encryption settings
+
+---
+
+## Security Insight:
+
+- Encryption reduces risk of data exposure
+- Even if data is accessed, it remains protected
+
+---
