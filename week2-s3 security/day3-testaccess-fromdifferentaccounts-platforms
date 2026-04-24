@@ -1,0 +1,42 @@
+# AWS S3 Public Access Risk Analysis
+
+## What I did:
+
+- Tested public access using object URL
+- Verified access from incognito mode
+- Shared link to confirm unrestricted access
+
+---
+
+## Key Learnings:
+
+- Public access requires no authentication
+- Anyone with the link can access the data
+- Data can be indexed or shared unintentionally
+
+---
+
+## Hands-on Summary:
+
+- Opened object URL in browser
+- Verified access without AWS login
+- Confirmed vulnerability
+
+---
+
+## Mistakes to Avoid:
+
+- Assuming only limited users can access public data
+- Ignoring access testing after configuration changes
+
+---
+
+## Security Insight:
+
+- Public exposure can lead to:
+  - Data leaks
+  - Compliance violations
+  - Reputation damage
+
+---
+
