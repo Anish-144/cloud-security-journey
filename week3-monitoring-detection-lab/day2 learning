@@ -1,0 +1,58 @@
+# AWS CloudTrail Monitoring
+
+## What I did:
+
+- Created a CloudTrail trail
+- Configured centralized logging
+- Created S3 bucket for CloudTrail logs
+- Enabled management events
+- Generated AWS activity and verified logs
+
+---
+
+## Key Learnings:
+
+- CloudTrail continuously records AWS API activity
+- Trails store logs for long-term auditing
+- Centralized logging improves visibility
+- CloudTrail is critical for compliance and monitoring
+
+---
+
+## Hands-on Summary:
+
+- Created trail:
+  - `security-monitoring-trail`
+- Configured:
+  - Read events
+  - Write events
+  - Management events
+- Verified logs after:
+  - IAM changes
+  - EC2 operations
+  - S3 actions
+
+---
+
+## Mistakes to Avoid:
+
+- Not enabling CloudTrail in AWS accounts
+- Ignoring management event logging
+- Not storing logs securely
+
+---
+
+## Security Insight:
+
+- CloudTrail helps detect unauthorized actions
+- Audit logs are important during investigations
+- Security teams rely heavily on CloudTrail visibility
+
+---
+
+## Screenshots Taken:
+
+- Trail configuration page
+- Trail successfully created
+- CloudTrail event logs
+- S3 log storage bucket
