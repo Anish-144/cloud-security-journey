@@ -1,0 +1,31 @@
+# AWS CloudWatch Monitoring
+
+## What I did:
+
+- Explored AWS CloudWatch service
+- Opened EC2 metrics dashboard
+- Monitored CPU utilization metrics
+- Generated CPU load on EC2 instance
+- Observed real-time metric spike
+
+---
+
+## Key Learnings:
+
+- CloudWatch provides real-time monitoring
+- Metrics help understand system behavior
+- CPU spikes may indicate abnormal activity
+- Monitoring improves visibility into cloud infrastructure
+
+---
+
+## Hands-on Summary:
+
+- Viewed EC2 metrics in CloudWatch
+- Monitored:
+  - CPU utilization
+  - Network traffic
+  - Resource activity
+- Generated CPU load using:
+  ```bash
+  yes > /dev/null
